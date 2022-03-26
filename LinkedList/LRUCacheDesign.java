@@ -1,5 +1,17 @@
 import java.util.HashMap;
 
+class NodeD {
+    int data;
+    NodeD next;
+    NodeD prev;
+
+    NodeD(int data) {
+        this.data = data;
+        next = null;
+        prev = null;
+    }
+}
+
 class LRUcache { // O(1) insertion | O(1) auxSpace
     int capacity;
     int count;
